@@ -1,0 +1,41 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import '@fontsource/poppins';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: light dark;
+		scroll-behavior: smooth;
+		--primary-color: #101511;
+		--secondary-color: #191F1F;
+		--terciary-color: #23282D;
+		--green-lime: #B5EF77;
+		--color-text2: #BEBEBE;
+	}
+	html {
+		font-family: 'Poppins', sans-serif;
+		background: var(--primary-color);
+		/* background-size: 224px; */
+	}
+	
+</style>

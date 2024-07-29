@@ -1,0 +1,36 @@
+---
+import ProjectsHome from '../components/Home/ProjectsHome.astro';
+import About from '../components/Home/About.astro';
+import Techs from '../components/Home/Techs.astro';
+import Hero from '../components/Home/Hero.astro'
+import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro';
+import '@fontsource-variable/syne';
+---
+
+<Layout title="Juan Antonio - Desarrollador móvil e ingeniero informático">
+	<!-- encabezado -->
+	<header id="inicio" class="flex flex-col items-center gap-[102px]">
+		<Navbar/>
+		<Hero/>
+	</header>
+	<!-- contenido principal -->
+	<main class="flex flex-col items-center gap-[140px]">
+		<!-- tecnologias -->
+		<section class="max-w-[1310px] w-full flex flex-col gap-11 mt-[220px]">
+			<Techs/>
+		</section>
+		<!-- sobre mi -->
+		 <section class="max-w-[1310px] w-full flex flex-col items-center gap-11">
+			<h3 class="font-semibold text-5xl">Sobre mi</h3>
+			<About/>
+		 </section>
+		 <!-- proyectos -->
+			<section class="max-w-[1310px] w-full flex flex-col items-center gap-11">
+				<h3 class="font-semibold text-5xl">Proyectos seleccionados</h3>
+				<ProjectsHome/>
+			</section>
+		
+	</main>
+</Layout>
+
