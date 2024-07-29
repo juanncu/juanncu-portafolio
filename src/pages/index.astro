@@ -1,4 +1,6 @@
 ---
+import SubtitleContact from '../components/Home/SubtitleContact.astro'
+import Contact from '../components/Home/Contact.astro'
 import TimeLineExperience from '../components/Home/TimeLineExperience.astro';
 import ProjectsHome from '../components/Home/ProjectsHome.astro';
 import About from '../components/Home/About.astro';
@@ -15,28 +17,36 @@ import '@fontsource-variable/syne';
 		<Navbar/>
 		<Hero/>
 	</header>
-	<!-- contenido principal -->
+	<!-- CONTENT MAIN -->
 	<main class="flex flex-col items-center gap-[140px]">
 		<!-- tecnologias -->
 		<section class="max-w-[1310px] w-full flex flex-col gap-11 mt-[220px]">
 			<Techs/>
 		</section>
-		<!-- sobre mi -->
+		<!-- ABOUT -->
 		 <section class="max-w-[1310px] w-full flex flex-col items-center gap-11">
 			<h3 class="font-semibold text-5xl">Sobre mi</h3>
 			<About/>
 		 </section>
-		 <!-- proyectos -->
+		 <!-- PROJECTS -->
 			<section class="max-w-[1310px] w-full flex flex-col items-center gap-11">
 				<h3 class="font-semibold text-5xl">Proyectos seleccionados</h3>
 				<ProjectsHome/>
 			</section>
-			<!-- experiencia -->
+			<!-- EXPERIENCE -->
 			<section class="max-w-[1310px] w-full flex flex-col items-center gap-11">
 				<h3 class="font-semibold text-5xl">Experiencia</h3>
 				<TimeLineExperience/>
 			</section>
-		
+			<!-- CONTACT -->
+			<section class="max-w-[1310px] w-full flex flex-col items-center gap-11">
+				<div class="w-full text-center flex flex-col gap-4">
+					<SubtitleContact/>					
+					<h3 class="font-semibold text-5xl leading-[70px]">¿Tienes un proyecto en mente? <br>
+						Escribeme.</h3>
+				</div>
+				<Contact/>
+			</section>
 	</main>
 </Layout>
 
