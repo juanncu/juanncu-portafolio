@@ -4,8 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
 import '@fontsource/poppins';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!doctype html>
@@ -17,6 +17,7 @@ import '@fontsource/poppins';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<slot />
