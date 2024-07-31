@@ -5,20 +5,44 @@ import Android from "../../../public/svgs/Android.astro"
 import Firebase from "../../../public/svgs/Firebase.astro"
 import Flutter from "../../../public/svgs/Flutter.astro"
 import Dart from "../../../public/svgs/Dart.astro"
-
-
+import LabelHover from "../LabelHover.astro"
 ---
-
+<!-- title secction -->
 <div class="flex flex-row w-full justify-center items-center gap-8">
   <div class="w-[260px] h-[1px] bg-white"></div>
   <p class="text-2xl font-bold font-syne">Tecnologías</p>
   <div class="w-[260px] h-[1px] bg-white"></div>
 </div>
+<!-- svgs techs -->
 <div class="flex flex-row gap-12 w-full justify-center items-end">
-  <Kotlin/>
-  <Compose/>
-  <Android/>
-  <Firebase/>
-  <Flutter/>
-  <Dart/>
+  <!-- KOTLIN -->
+  <div class="label">
+    <LabelHover title="Kotlin"/>
+    <Kotlin/>
+  </div>
+  <!-- COMPOSE -->
+  <div class="label">
+    <LabelHover title="Compose"/>
+    <Compose/>
+  </div>
+  <!-- ANDROID -->
+  <div class="label">
+    <LabelHover title="Android"/>
+    <Android/>
+  </div>
+  <!-- FIREBASE -->
+  <div class="label">
+    <LabelHover title="Firebase"/>
+    <Firebase/>
+  </div>
+  <!-- FLUTTER -->
+  <div class="label">
+    <LabelHover title="Flutter"/>
+    <Flutter/>
+  </div>
+  <!-- DART -->
+  <div class="label">
+    <LabelHover title="Dart"/>
+    <Dart/>
+  </div>
 </div>
