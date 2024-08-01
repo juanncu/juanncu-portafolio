@@ -2,19 +2,19 @@
 import InfoProjectHover from "../InfoProjectHover.astro"
 ---
 <div class="w-full grid gap-5 grid-cols-7">
-  <div class="h-[386px] rounded-[40px] bg-secondary-color col-span-3 overflow-hidden">
-    <img src="https://i.imgur.com/wb2lRG5.jpg" alt="tecnmapp" class="w-full h-full duration-500">
+  <div class="h-[386px] rounded-[40px] bg-secondary-color col-span-3 overflow-hidden hover:border hover:border-green-lime">
+    <img src="https://i.imgur.com/wb2lRG5.jpg" alt="tecnmapp" class="w-full h-full rounded-[40px] duration-500">
     <InfoProjectHover/>
   </div>
-  <div class="h-[386px] rounded-[40px] bg-neutral-300 col-span-4 overflow-hidden">
+  <div class="h-[386px] rounded-[40px] bg-neutral-300 col-span-4 overflow-hidden hover:border hover:border-green-lime">
     <img src="https://i.imgur.com/PQnFZlx.jpg" alt="tecnmapp" class="w-full h-full duration-500">
     <InfoProjectHover/>
   </div>
-  <div class="h-[386px] rounded-[40px] col-span-4 overflow-hidden bg-neutral-300">
+  <div class="h-[386px] rounded-[40px] col-span-4 overflow-hidden bg-neutral-300 hover:border hover:border-green-lime">
     <img src="https://i.imgur.com/Rn0dotx.jpg" alt="equirentapp" class="w-full h-full duration-500">
     <InfoProjectHover/>
   </div>
-  <div class="h-[386px] rounded-[40px] bg-neutral-300 col-span-3 overflow-hidden">
+  <div class="h-[386px] rounded-[40px] bg-neutral-300 col-span-3 overflow-hidden hover:border hover:border-green-lime">
     <img src="https://i.imgur.com/QfbagjN.jpg" alt="equirentapp" class="w-full h-full duration-500">
     <InfoProjectHover/>
   </div>
@@ -25,5 +25,6 @@ import InfoProjectHover from "../InfoProjectHover.astro"
 <style>
   div:hover > img {
     transform: scale(1.05);
+    /* filter: brightness(.5); */
   }
 </style>
