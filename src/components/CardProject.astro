@@ -13,7 +13,7 @@ interface Props {
 const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props;
 ---
 
-<div class="h-[720px] rounded-[40px] bg-secondary-color col-span-2 overflow-hidden border border-terciary-color px-12 py-8">
+<section class="h-[720px] rounded-[40px] bg-secondary-color col-span-2 overflow-hidden border border-terciary-color px-12 py-8">
   <div class="flex flex-col gap-4 mb-7">
     <div class="w-full flex flex-row items-center justify-between">
       <div class="flex flex-row gap-3">
@@ -21,7 +21,7 @@ const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props
         <div class="font-syne h-max font-medium text-base px-3 py-1 border-2 border-terciary-color rounded-xl">{tech2}</div>
         <div class="font-syne h-max font-medium text-base px-3 py-1 border-2 border-terciary-color rounded-xl">{tech3}</div>
       </div>
-      <a href={linkPagina} class="font-medium text-lg px-8 py-4 bg-secondary-color border border-green-lime rounded-full hover:bg-terciary-color">Ver más</a>
+      <a href={linkPagina} class="font-medium text-lg px-8 py-4 bg-secondary-color border border-green-lime rounded-full hover:bg-terciary-color duration-300">Ver más</a>
     </div>
     <div class="flex flex-col gap-[10px]">
       <h6 class="font-bold text-2xl">{title}</h6>
@@ -33,4 +33,4 @@ const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props
     <img src={img2} alt="img1" class="w-[410px] rounded-[10px] -rotate-6 relative bottom-32 right-5 hover:scale-105 duration-300">
     
   </div>
-</div>
+</section>

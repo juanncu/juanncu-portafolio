@@ -1,0 +1,14 @@
+---
+interface Props {
+	classesTodo: string
+  classesMovil: string
+  classesWeb: string
+}
+const { classesTodo, classesMovil, classesWeb } = Astro.props;
+---
+
+<div class="w-full h-max max-w-[1310px] flex flex-row gap-5 mt-12">
+  <a href="allProjects" class={classesTodo}>Todo</a>
+  <a href="allProjectsMovil" class={classesMovil}>Móvil</a>
+  <a href="allProjectsWeb" class={classesWeb}>Web</a>
+</div>
