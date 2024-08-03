@@ -11,10 +11,12 @@ interface Props {
 
 }
 const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props;
+import IconPhone from '../../public/svgs/IconPhone.astro'
+import IconWeb from '../../public/svgs/IconWeb.astro'
 ---
 
 <section class="h-[720px] rounded-[40px] bg-secondary-color col-span-2 overflow-hidden border border-terciary-color px-12 py-8">
-  <div class="flex flex-col gap-4 mb-7">
+  <div class="flex flex-col gap-4 mb-3">
     <div class="w-full flex flex-row items-center justify-between">
       <div class="flex flex-row gap-3">
         <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech1}</div>
@@ -27,10 +29,11 @@ const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props
       <h6 class="font-bold text-2xl">{title}</h6>
       <p class="font-medium text-lg">{text}</p>
     </div>
+    <IconPhone/>
   </div>
   <div>
-    <img src={img1} alt="img2" class="w-[410px] rounded-[10px] -rotate-6 relative top-4 left-40 opacity-75 hover:scale-105 duration-300">
-    <img src={img2} alt="img1" class="w-[410px] rounded-[10px] -rotate-6 relative bottom-32 right-5 hover:scale-105 duration-300">
+    <img src={img1} alt="img2" class="w-[410px] rounded-[10px] rotate-6 relative top-4 left-40 opacity-75 hover:scale-105 duration-300">
+    <img src={img2} alt="img1" class="w-[410px] rounded-[10px] rotate-6 relative bottom-32 right-5 hover:scale-105 duration-300">
     
   </div>
 </section>
