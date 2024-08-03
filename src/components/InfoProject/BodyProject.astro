@@ -1,0 +1,19 @@
+---
+interface Props {
+  text: string;
+	github: string;
+  playstore: string;
+  img: string
+}
+const { text, github, playstore, img } = Astro.props;
+---
+<section>
+  <article>
+    <p>{text}</p>
+    <div>
+      <div>{github}</div>
+      <div>{playstore}</div>
+    </div>
+  </article>
+  <img src={img} alt="imgProject">
+</section>
