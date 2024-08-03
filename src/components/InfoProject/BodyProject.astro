@@ -1,4 +1,7 @@
 ---
+import Github from '../../../public/svgs/redes/Github.astro';
+import PlayStore from '../../../public/svgs/redes/PlayStore.astro';
+
 interface Props {
   text: string;
 	github: string;
@@ -7,13 +10,13 @@ interface Props {
 }
 const { text, github, playstore, img } = Astro.props;
 ---
-<section>
-  <article>
-    <p>{text}</p>
-    <div>
-      <div>{github}</div>
-      <div>{playstore}</div>
+<section class="max-w-[1310px] w-full flex flex-row justify-between">
+  <article class="w-[663px] flex flex-col gap-16">
+    <p class="font-normal text-lg">{text}</p>
+    <div class="flex flex-row gap-3">
+      <a href={github} class="bg-secondary-color rounded-xl w-max px-3 py-2 flex border border-secondary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300"><Github/></a>
+      <a href={playstore} class="bg-secondary-color rounded-xl w-max px-3 py-2 flex border border-secondary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300"><PlayStore/></a>
     </div>
   </article>
-  <img src={img} alt="imgProject">
+  <img src={img} alt="imgProject" class="w-[526px] h-[441px] rounded-[20px]  hover:scale-105 duration-300">
 </section>
