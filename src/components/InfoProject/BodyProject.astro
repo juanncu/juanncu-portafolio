@@ -3,24 +3,27 @@ import Github from '../../../public/svgs/redes/Github.astro';
 import Web from '../../../public/svgs/redes/Web.astro';
 
 interface Props {
-  text: string;
+  parrafo1: string;
+  parrafo2?: string;
+  parrafo3?: string;
+  parrafo4?: string;
 	github?: string;
   web?: string;
   img: string
   clasesGithub: string
   clasesWeb: string
 }
-const { text, github, web, img, clasesGithub, clasesWeb } = Astro.props;
+const { parrafo1, parrafo2, parrafo3, parrafo4, github, web, img, clasesGithub, clasesWeb } = Astro.props;
 
 
 ---
-<section class="max-w-[1310px] w-full flex flex-row justify-between">
-  <article class="w-[663px] flex flex-col gap-16">
-    <p class="font-normal text-lg">{text}</p>
-    <div class="flex flex-row gap-3">
+<section class="max-w-[1310px] w-full flex flex-col items-center gap-10">
+  <article class="w-full flex flex-col gap-16">
+    <p class="font-normal text-lg">{parrafo1} <br><br> {parrafo2} <br><br> {parrafo3} <br><br> {parrafo4}</p>
+    <div class="flex w-full flex-row justify-center gap-3">
       <a href={github} target="_blank" class={clasesGithub}><Github/></a>
       <a href={web} target="_blank" class={clasesWeb}><Web/></a>
     </div>
   </article>
-  <img src={img} alt="imgProject" class="w-[550px] h-[400px] rounded-[20px]  hover:scale-105 duration-300">
+  <img src={img} alt="imgProject" class="w-11/12  rounded-[20px]  hover:scale-105 duration-300">
 </section>
