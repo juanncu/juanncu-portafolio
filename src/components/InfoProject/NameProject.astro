@@ -7,9 +7,8 @@ interface Props {
   tech2: string;
   tech3: string;
   rol: string;
-  año: string
 }
-const { tech1, tech2, tech3, title, rol, año } = Astro.props;
+const { tech1, tech2, tech3, title, rol } = Astro.props;
 ---
 <div class="flex flex-col gap-7 max-w-[1310px] w-full">
   <a href="javascript:history.back()" class="font-syne font-semibold text-base text-green-lime flex flex-row gap-2 w-max"><Back/> Regresar</a>
@@ -19,5 +18,5 @@ const { tech1, tech2, tech3, title, rol, año } = Astro.props;
     <div class="font-syne font-semibold px-5 py-1 rounded-full bg-terciary-color w-max">{tech2}</div>
     <div class="font-syne font-semibold px-5 py-1 rounded-full bg-terciary-color w-max">{tech3}</div>
   </div>
-<p class="font-syne text-lg font-medium text-color-text2">Mi rol: {rol} <br> Año: {año}</p>
+<p class="font-syne text-lg font-medium text-color-text2">Mi rol: {rol}</p>
 </div>
