@@ -12,7 +12,6 @@ interface Props {
 }
 const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props;
 import IconWeb from '../../public/svgs/IconWeb.astro'
-import IconWeb2 from '../../public/svgs/IconWeb2.svg'
 
 ---
 
@@ -30,9 +29,7 @@ import IconWeb2 from '../../public/svgs/IconWeb2.svg'
       <h6 class="font-bold text-2xl">{title}</h6>
       <p class="font-medium text-lg">{text}</p>
     </div>
-    <img src={IconWeb2.src} alt="svg web" class="w-7 h-7">
-    <!-- <IconWeb2> -->
-    <!-- <IconWeb/> -->
+    <IconWeb/>
   </div>
   <div class=" mt-[-10px]">
     <img src={img1} alt="img2" class="w-[410px] h-[270px] rounded-[10px] relative top-4 left-40 opacity-70 hover:scale-105 duration-300">
