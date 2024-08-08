@@ -15,10 +15,10 @@ import IconWeb from '../../public/svgs/IconWeb.astro'
 
 ---
 
-<section class="h-[720px] rounded-[40px] bg-secondary-color col-span-2 overflow-hidden border border-terciary-color px-12 py-8">
-  <div class="flex flex-col gap-4 mb-3">
-    <div class="w-full flex flex-row items-center justify-between">
-      <div class="flex flex-row gap-3">
+<section class="h-[695px] xsm:h-[640px] sm:h-[720px] rounded-[40px] bg-secondary-color col-span-1 mmd:col-span-2 overflow-hidden border border-terciary-color px-5 py-5 sm:px-12 sm:py-8">
+  <div class="flex flex-col gap-5 sm:gap-4 mb-3">
+    <div class="w-full flex gap-5 flex-row flex-wrap-reverse items-start sm:items-center sm:justify-between">
+      <div class="flex flex-row gap-1 sm:gap-3 flex-wrap">
         <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech1}</div>
         <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech2}</div>
         <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech3}</div>
@@ -31,9 +31,9 @@ import IconWeb from '../../public/svgs/IconWeb.astro'
     </div>
     <IconWeb/>
   </div>
-  <div class=" mt-[-10px]">
-    <img src={img1} alt="img2" class="w-[410px] h-[270px] rounded-[10px] relative top-4 left-40 opacity-70 hover:scale-105 duration-300">
-    <img src={img2} alt="img1" class="w-[410px] h-[270px] rounded-[10px] relative bottom-40 right-5 hover:scale-105 duration-300">
+  <div class="mt-[-10px] mx-auto">
+    <img src={img1} alt="img2" class="w-[330px] h-[200px]  sm:w-[410px] sm:h-[270px] rounded-[10px] relative top-4 left-10 xxsm:left-32 xsm:left-36 sm:left-40 opacity-70 hover:scale-105 duration-300">
+    <img src={img2} alt="img1" class="w-[330px] h-[200px]  sm:w-[410px] sm:h-[270px] rounded-[10px] relative bottom-28 sm:bottom-40 right-0 sm:right-5 hover:scale-105 duration-300">
     
   </div>
 </section>
