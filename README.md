@@ -1,4 +1,4 @@
-# PORTAFOLIO DESARROLLADO POR JUAN ANTONIO CU
+# Portafolio Desarrollado Por Juan Antonio Cu
 
 ## Astro Starter Kit: Basics
 
