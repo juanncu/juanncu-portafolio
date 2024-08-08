@@ -1,0 +1,48 @@
+---
+import iconNavMobile from '../../public/svgs/iconNavMobile.svg'
+---
+
+<div class="menuMobile w-full flex flex-col h-52 mt-6 z-30 sm:hidden">
+  <input type="checkbox" id="btn" class="duration-300 " />
+  <label for="btn" class="duration-300 w-[100%]">
+      <img src={iconNavMobile.src} class="imgAbrir w-12 backdrop-blur-3xl rounded-lg" />
+      <nav class="opcionesMenu bg-[#23282D]/75 backdrop-blur-3xl rounded-2xl w-full h-64 border border-neutral-700/40 mt-3 flex flex-col items-center justify-center gap-2">
+        <a href="./#inicio" class="px-4 py-2 rounded-full hover:bg-green-lime hover:text-primary-color duration-300">Inicio</a>
+        <a href="./#sobremi" class="px-4 py-2 rounded-full hover:bg-green-lime hover:text-primary-color duration-300">Sobre mí</a>
+        <a href="./#proyectoshome" class="px-4 py-2 rounded-full hover:bg-green-lime hover:text-primary-color duration-300">Proyectos</a>
+        <a href="./#experiencia" class="px-4 py-2 rounded-full hover:bg-green-lime hover:text-primary-color duration-300">Experiencia</a>
+        <a href="#contacto" class="px-4 py-2 rounded-full hover:bg-green-lime hover:text-primary-color duration-300">Contacto</a>
+      </nav>
+  </label>
+</div>
+
+<style>
+
+  #btn{
+    display: none;
+  }
+
+  .opcionesMenu {
+    animation: fade-out .2s forwards;
+  }
+
+  #btn:checked + label > .opcionesMenu {
+    animation: fade-in .2s forwards;
+  }
+  
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      display: flex;
+    }
+  }
+
+</style>
