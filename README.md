@@ -1,4 +1,6 @@
-# Astro Starter Kit: Basics
+# PORTAFOLIO DE JUAN ANTONIO CU
+
+## Astro Starter Kit: Basics
 
 ```sh
 npm create astro@latest -- --template basics
