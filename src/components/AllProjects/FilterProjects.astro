@@ -8,7 +8,7 @@ interface Props {
 const { classestodo, classesback, classesfull, classesfront } = Astro.props;
 ---
 
-<div class="w-full h-max max-w-[1310px] flex flex-row gap-5 mt-12">
+<div class="w-full h-max max-w-[1310px] flex flex-row gap-5 mt-12 flex-wrap">
   <a href="allProjects" class={classestodo}>Todo</a>
   <a href="allProjectsBackend" class={classesback}>Backend</a>
   <a href="allProjectsFullstack" class={classesfull}>FullStack</a>

@@ -11,9 +11,9 @@ import '@fontsource-variable/syne';
   <header class="flex flex-col items-center">
 		<Navbar/>
 	</header>
-  <main class="flex flex-col items-center min-w-full pt-44">
+  <main class="flex flex-col items-center min-w-full pt-32 sm:pt-44 px-3">
     <!-- titulo -->
-    <h4 class="font-semibold text-5xl max-w-[1310px] w-full text-center">Todos mis trabajos.</h4>
+    <h4 class="font-semibold text-4xl sm:text-5xl max-w-[1310px] w-full text-center">Todos mis trabajos.</h4>
     <!-- filtro -->
     <FilterProjects 
     classestodo="px-7 py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
@@ -22,7 +22,7 @@ import '@fontsource-variable/syne';
     classesfront="px-7 py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
     />
     <!-- cards -->
-    <div class="max-w-[1310px] w-full grid gap-5 grid-cols-4 mt-9">
+    <div class="max-w-[1310px] w-full grid gap-5 grid-cols-1 mmd:grid-cols-4 mt-9">
       <CardProject tech1="NodeJs" tech2="ExpressJs" tech3="MySQL", linkPagina="infoProject/infoProjectEquirent" title="EquirentControl" text="Aplicación web desarrollada para ayudar a llevar un control de las principales actividades de un negocio dedicado a la renta de baños portátiles." img1="https://i.imgur.com/zRQL2jp.png" img2="https://i.imgur.com/ivKS5X0.jpg"/>
       <CardProject tech1="Laravel" tech2="PHP" tech3="MySQL", linkPagina="infoProject/infoProjectRentBici" title="Adminstrador de Rentas" text="Aplicación Fullstack que permite realizar un inventario y llevar el control de las rentas de bicicletas y equipo de ciclismo." img1="https://i.imgur.com/koQVwgW.png" img2="https://i.imgur.com/koQVwgW.png"/>  
     </div>
