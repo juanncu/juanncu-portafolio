@@ -28,10 +28,10 @@ export default {
       lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      lg2: "1366px",
-
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
+
+      xl2: "1366px",
 
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
