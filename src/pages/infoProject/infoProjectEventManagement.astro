@@ -1,0 +1,28 @@
+---
+import Footer from "../../components/Footer.astro";
+import BodyProject from "../../components/InfoProject/BodyProject.astro";
+import NameProject from "../../components/InfoProject/NameProject.astro";
+import Layout from "../../layouts/Layout.astro";
+import '@fontsource-variable/syne';
+---
+
+<Layout title="Proyectos - Event Management">
+  <main class="flex flex-col items-center min-w-full pt-12 xsm:pt-20 gap-14 px-4">
+    <NameProject 
+    title="Event Management" 
+    tech1="ExpressJs" 
+    tech2="Sequelize" 
+    tech3="MySQL" 
+    rol="Desarrollador Backend"
+    />
+    <BodyProject 
+    parrafo1="[ AÚN EN DESARROLLO ....... ]"
+    parrafo2="Backend de una aplicación que permite llevar un control y administración de eventos u actividades de cualquier tipo, permitiendo a los usuarios poder crear sus propios eventos, unirse a eventos ya creados, actualizar información de los eventos, entre otras funcionalidades más."
+    parrafo3="Para este proyecto se utilizo JavaScript como lenguaje de programación, junto con NodeJs y ExpressJs para el desarrollo del servidor, además del ORM Sequelize para poder interactuar con la base de datos creada con MySQL." 
+    github="https://github.com/juanncu/nodejs-mysql-restapi-test" 
+    img="https://i.imgur.com/xibjn3d.png" 
+    clasesGithub="hidden bg-secondary-color rounded-xl w-max px-4 py-3 flex border border-terciary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300" 
+    clasesWeb="hidden bg-secondary-color rounded-xl w-max px-4 py-3 flex border border-terciary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300"/>
+  </main>
+  <Footer/>
+</Layout>
