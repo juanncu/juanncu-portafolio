@@ -6,11 +6,12 @@ interface Props {
   linkPagina: string
   title: string;
   text: string;
+  cargo: string;
   img1: string;
   img2: string;
 
 }
-const { tech1, tech2, tech3, linkPagina, title, text, img1, img2 } = Astro.props;
+const { tech1, tech2, tech3, linkPagina, title, text, cargo, img1, img2 } = Astro.props;
 import IconWeb from '../../public/svgs/IconWeb.astro'
 
 ---
@@ -19,9 +20,9 @@ import IconWeb from '../../public/svgs/IconWeb.astro'
   <div class="flex flex-col gap-5 sm:gap-4 mb-3">
     <div class="w-full flex gap-5 flex-row flex-wrap-reverse items-start sm:items-center sm:justify-between">
       <div class="flex flex-row gap-1 sm:gap-3 flex-wrap">
-        <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech1}</div>
-        <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech2}</div>
-        <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color rounded-full">{tech3}</div>
+        <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color bg-terciary-color rounded-full">{tech1}</div>
+        <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color bg-terciary-color rounded-full">{tech2}</div>
+        <div class="font-syne h-max font-medium text-base px-4 py-1 border-2 border-terciary-color bg-terciary-color rounded-full">{tech3}</div>
       </div>
       <a href={linkPagina} class="font-medium text-lg px-8 py-4 bg-secondary-color border border-green-lime rounded-full hover:bg-terciary-color duration-300">Ver más</a>
     </div>
@@ -29,7 +30,8 @@ import IconWeb from '../../public/svgs/IconWeb.astro'
       <h6 class="font-bold text-2xl">{title}</h6>
       <p class="font-medium text-lg">{text}</p>
     </div>
-    <IconWeb/>
+    <h6 class="font-bold text-color-text2 py-1 px-3 border-2 italic w-max rounded-full border-terciary-color">{cargo}</h6>
+    <!-- <IconWeb/> -->
   </div>
   <div class="mt-[-10px] mx-auto">
     <img src={img1} alt="img2" class="w-[280px] h-[190px]  sm:w-[410px] sm:h-[270px] rounded-[10px] relative top-4 left-10 xxsm:left-32 xsm:left-36 sm:left-40 opacity-70 hover:scale-105 duration-300">
