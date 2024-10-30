@@ -1,0 +1,28 @@
+---
+import Footer from "../../components/Footer.astro";
+import BodyProject from "../../components/InfoProject/BodyProject.astro";
+import NameProject from "../../components/InfoProject/NameProject.astro";
+import Layout from "../../layouts/Layout.astro";
+import '@fontsource-variable/syne';
+---
+
+<Layout title="Proyectos - APP Ejercicio Android">
+  <main class="flex flex-col items-center min-w-full pt-12 xsm:pt-20 gap-14 px-4">
+    <NameProject 
+    title="App para hacer ejercicio (AÚN EN DESARROLLO)" 
+    tech1="Kotlin" 
+    tech2="XML" 
+    tech3="Android" 
+    rol="Desarrollador Android y Diseñador UX"
+    />
+    <BodyProject 
+    parrafo1="Aplicación móvil nativa para el sistema operativo android desarrollada para ayudar a los usuarios a llevar un control de la actividad física realizada. Entre las principales funciones que ofrece la aplicación se encuentran las siguientes: llevar un control de las carreras y el recorrido transcurrido, medición de la velocidad al correr, establecimientos de objetivos, seguimiento de esos objetivos, inicio de sesión para la persistencia de los datos, entre muchas otras."
+    parrafo2="Decidí llevar a cabo el desarrollo de esta aplicación con la finalidad de profundizar en temas relacionados al desarrollo de aplicaciones móviles para android utilizando kotlin como lenguaje de programación y XML para el desarrollo de toda la UI. Aunque hoy en día es más conveniente utilizar Jetpack Compose para la UI, decidí utilizar XML para repasar terminos y asentar las bases necesarias para el uso de esta herramienta y así tener una visión desde dos puntos de vista diferentes a la hora de desarrollar una aplicación para el sistema operativo Android."
+    parrafo3="En esta aplicación se hace uso de diferentes APIS internas del sistema operativo, como la camara, el GPS y las notificaciones, las cuales hacen que la aplicación sea muy útil para los objetivos planteados." 
+    github="https://github.com/juanncu/nodejs-mysql-restapi-test" 
+    img="https://i.imgur.com/EjS4tdb.png" 
+    clasesGithub="hidden bg-secondary-color rounded-xl w-max px-4 py-3 flex border border-terciary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300" 
+    clasesWeb="hidden bg-secondary-color rounded-xl w-max px-4 py-3 flex border border-terciary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300"/>
+  </main>
+  <Footer/>
+</Layout>
