@@ -1,0 +1,28 @@
+---
+import Footer from "../../components/Footer.astro";
+import BodyProject from "../../components/InfoProject/BodyProject.astro";
+import NameProject from "../../components/InfoProject/NameProject.astro";
+import Layout from "../../layouts/Layout.astro";
+import '@fontsource-variable/syne';
+---
+
+<Layout title="Proyectos - App de Banco UI">
+  <main class="flex flex-col items-center min-w-full pt-12 xsm:pt-20 gap-14 px-4">
+    <NameProject 
+    title="App de Banco UI (AÚN EN DESARROLLO)" 
+    tech1="Kotlin" 
+    tech2="Jetpack Compose" 
+    tech3="Android" 
+    rol="Desarrollador Android y Diseñador UX"
+    />
+    <BodyProject 
+    parrafo1="Aplicación móvil nativa para el sistema operativo android que simula una aplicación de banco, desarrollada para practicar el uso de Jetpack Compose."
+    parrafo2="EN DESARROLLO - EN DESARROLLO"
+    parrafo3="EN DESARROLLO - EN DESARROLLO" 
+    github="https://github.com/juanncu/nodejs-mysql-restapi-test" 
+    img="https://i.imgur.com/vaDKkEc.png" 
+    clasesGithub="hidden bg-secondary-color rounded-xl w-max px-4 py-3 flex border border-terciary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300" 
+    clasesWeb="hidden bg-secondary-color rounded-xl w-max px-4 py-3 flex border border-terciary-color justify-center items-center hover:bg-teciary-color hover:border-green-lime duration-300"/>
+  </main>
+  <Footer/>
+</Layout>
