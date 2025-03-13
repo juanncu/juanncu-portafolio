@@ -1,0 +1,30 @@
+---
+import FilterProjects from "../components/AllProjects/FilterProjects.astro";
+import CardProject from "../components/CardProject.astro";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import '@fontsource-variable/syne';
+---
+
+<Layout title="Todos Los Proyectos - Backend">
+  <header class="flex flex-col items-center">
+		<Navbar/>
+	</header>
+  <main class="flex flex-col items-center min-w-full pt-32 sm:pt-44 px-3">
+    <!-- titulo -->
+    <h4 class="font-semibold text-4xl sm:text-5xl max-w-[1310px] w-full text-center">Todos mis trabajos.</h4>
+    <!-- filtro -->
+    <FilterProjects 
+    classestodo="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
+    classesback="px-5 py-1 sm:px-7 sm:py-2 bg-terciary-color border font-syne font-semibold text-green-lime border-green-lime rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
+    classesfull="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
+    classesfront="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
+    />
+    <!-- cards -->
+    <div class="max-w-[1310px] w-full grid gap-5 grid-cols-1 mmd:grid-cols-4 mt-9">
+      <CardProject tech1="JavaScript" tech2="HTML" tech3="CSS", linkPagina="infoProject/infoProjectAdmonServ" title="Administración de servidores" text="Página web desarrollada como práctica de una asignatura de la universidad, en donde se muestra información relacionada al uso de servidores." img1="https://i.imgur.com/wmu937A.png" img2="https://i.imgur.com/wmu937A.png" cargo="Frontend"/>
+    </div>
+  </main>
+  <Footer/>
+</Layout>

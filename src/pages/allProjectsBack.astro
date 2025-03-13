@@ -7,7 +7,7 @@ import Layout from "../layouts/Layout.astro";
 import '@fontsource-variable/syne';
 ---
 
-<Layout title="Todos Los Proyectos - Backend">
+<Layout title="Todos Los Proyectos - Fullstack">
   <header class="flex flex-col items-center">
 		<Navbar/>
 	</header>
@@ -17,16 +17,15 @@ import '@fontsource-variable/syne';
     <!-- filtro -->
     <FilterProjects 
     classestodo="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
-    classesback="px-5 py-1 sm:px-7 sm:py-2 bg-terciary-color border font-syne font-semibold text-green-lime border-green-lime rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
-    classesfull="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
+    classesback="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
+    classesfull="px-5 py-1 sm:px-7 sm:py-2 bg-terciary-color border font-syne font-semibold text-green-lime border-green-lime rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
     classesfront="px-5 py-1 sm:px-7 sm:py-2 bg-secondary-color border font-syne font-semibold text-white border-terciary-color rounded-full hover:bg-terciary-color hover:text-green-lime hover:border-terciary-color duration-300"
     />
     <!-- cards -->
     <div class="max-w-[1310px] w-full grid gap-5 grid-cols-1 mmd:grid-cols-4 mt-9">
       <CardProject tech1="NodeJs" tech2="ExpressJs" tech3="MySQL", linkPagina="infoProject/infoProjectEquirent" title="EquirentControl" text="Aplicación web desarrollada para ayudar a llevar un control de las principales actividades de un negocio dedicado a la renta de baños portátiles." img1="https://i.imgur.com/zRQL2jp.png" img2="https://i.imgur.com/ivKS5X0.jpg" cargo="FullStack"/>
-      <CardProject tech1="JavaScript" tech2="HTML" tech3="CSS", linkPagina="infoProject/infoProjectAdmonServ" title="Administración de servidores" text="Página web desarrollada como práctica de una asignatura de la universidad, en donde se muestra información relacionada al uso de servidores." img1="https://i.imgur.com/wmu937A.png" img2="https://i.imgur.com/wmu937A.png" cargo="Frontend"/>
       <CardProject tech1="JavaScript" tech2="PHP" tech3="MySQL", linkPagina="infoProject/infoProjectTecnm" title="TecNM Software" text="Software de gestión académica enfocado en la agilización de procesos en las áreas de tutorías y actividades complementarias del instituto tecnológico de Chiná." img1="https://i.imgur.com/FKEFaqW.jpg" img2="https://i.imgur.com/FKEFaqW.jpg" cargo="Backend"/>
-      <CardProject tech1="Laravel" tech2="PHP" tech3="MySQL", linkPagina="infoProject/infoProjectRentBici" title="Adminstrador de Rentas" text="Aplicación Fullstack que permite realizar un inventario y llevar el control de las rentas de bicicletas y equipo de ciclismo." img1="https://i.imgur.com/koQVwgW.png" img2="https://i.imgur.com/koQVwgW.png" cargo="FullStack"/>  
+      <CardProject tech1="Laravel" tech2="PHP" tech3="MySQL", linkPagina="infoProject/infoProjectRentBici" title="Adminstrador de Rentas" text="Aplicación Fullstack que permite realizar un inventario y llevar el control de las rentas de bicicletas y equipo de ciclismo." img1="https://i.imgur.com/koQVwgW.png" img2="https://i.imgur.com/koQVwgW.png" cargo="FullStack"/>
       <CardProject tech1="NodeJs" tech2="ExpressJs" tech3="MySQL", linkPagina="infoProject/infoProjectAPIREST" title="REST API" text="REST API desarrollada con Node.js y Express.js que permite a un usuario agregar y manipular información de una base de datos SQL." img1="https://i.imgur.com/URWA81V.png" img2="https://i.imgur.com/URWA81V.png" cargo="Backend"/>
     </div>
   </main>
